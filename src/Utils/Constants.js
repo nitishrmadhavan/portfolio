@@ -13,7 +13,7 @@ const illustrationConst = {
 
 const GreetingConst = {
   username: "Nitish",
-  title: "Hello,",
+  title: "Hello,I'm Nitish Madhavan",
   subTitle: 
     "Nitish",
   resumeLink:
