@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import Greeting from "./Containers/Greeting/Greeting";
+import Skills from "./Containers/Skills/Skills";
 import SplashScreen from "./Containers/SplashScreen/SplashScreen";
 import {splashScreenConst} from "./Utils/Constants";
 import {StyleProvider} from "./Utils/StyleContext";
 import {UseLocalStorage} from "./Utils/UseLocalStorage";
-import "./Main.scss";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -36,6 +36,7 @@ const Main = () => {
         ) : (
           <>
             <Greeting />
+            <Skills/>
           </>
         )}
       </StyleProvider>
@@ -43,4 +44,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Main
