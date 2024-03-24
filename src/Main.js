@@ -4,6 +4,7 @@ import Skills from "./Containers/Skills/Skills";
 import Experience from "./Containers/Experience/Experience";
 import Education from "./Containers/Education/Education";
 import SplashScreen from "./Containers/SplashScreen/SplashScreen";
+import Projects from "./Containers/Projects/Projects";
 import {SplashScreenConst} from "./Utils/Constants";
 import {StyleProvider} from "./Utils/StyleContext";
 import {UseLocalStorage} from "./Utils/UseLocalStorage";
@@ -41,6 +42,7 @@ const Main = () => {
             <Skills />
             <Experience />
             <Education />
+            <Projects />
           </>
         )}
       </StyleProvider>
