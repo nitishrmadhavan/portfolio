@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Greeting from "./Containers/Greeting/Greeting";
 import Skills from "./Containers/Skills/Skills";
 import Experience from "./Containers/Experience/Experience";
+import Education from "./Containers/Education/Education";
 import SplashScreen from "./Containers/SplashScreen/SplashScreen";
 import {SplashScreenConst} from "./Utils/Constants";
 import {StyleProvider} from "./Utils/StyleContext";
@@ -39,6 +40,7 @@ const Main = () => {
             <Greeting />
             <Skills />
             <Experience />
+            <Education />
           </>
         )}
       </StyleProvider>

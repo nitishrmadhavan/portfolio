@@ -96,10 +96,26 @@ const ExperiencesConst = {
   ]
 };
 
+const EducationInfoConst={
+  display: true, 
+  schools: [
+    {
+      schoolName: "Vellore Institute of Technology",
+      logo: require("../Assets/Images/VITLogo.png"),
+      subHeader: "Master of Techology in Computer Science and Engineering - Integrated (5 Years)",
+      duration: "July 2019 - July 2024",
+      desc: "",
+      descBullets: [""
+      ]
+    }
+  ]
+};
+
 export{
     SplashScreenConst,
     IllustrationConst,
     GreetingConst,
     SkillsSectionConst,
-    ExperiencesConst
+    ExperiencesConst,
+    EducationInfoConst
 }
