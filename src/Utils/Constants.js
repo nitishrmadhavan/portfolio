@@ -75,22 +75,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "SOAP",
       fontAwesomeClassname: "fas fa-server"
-    },
-    {
-      skillName: "Debezium",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "Kafka",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "Airflow",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "HDFS",
-      fontAwesomeClassname: "fab fa-docker"
     }
   ],
   display: true // Set false to hide this section, defaults to true
