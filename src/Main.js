@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from "react";
 import Greeting from "./Containers/Greeting/Greeting";
 import Skills from "./Containers/Skills/Skills";
+import Experience from "./Containers/Experience/Experience";
 import SplashScreen from "./Containers/SplashScreen/SplashScreen";
-import {splashScreenConst} from "./Utils/Constants";
+import {SplashScreenConst} from "./Utils/Constants";
 import {StyleProvider} from "./Utils/StyleContext";
 import {UseLocalStorage} from "./Utils/UseLocalStorage";
 
@@ -13,10 +14,10 @@ const Main = () => {
     useState(true);
 
   useEffect(() => {
-    if (splashScreenConst.enabled) {
+    if (SplashScreenConst.enabled) {
       const splashTimer = setTimeout(
         () => setIsShowingSplashAnimation(false),
-        splashScreenConst.duration
+        SplashScreenConst.duration
       );
       return () => {
         clearTimeout(splashTimer);
@@ -31,12 +32,13 @@ const Main = () => {
   return (
     <div className={isDark ? "dark-mode" : null}>
       <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
-        {isShowingSplashAnimation && splashScreenConst.enabled ? (
+        {isShowingSplashAnimation && SplashScreenConst.enabled ? (
           <SplashScreen />
         ) : (
           <>
             <Greeting />
-            <Skills/>
+            <Skills />
+            <Experience />
           </>
         )}
       </StyleProvider>
