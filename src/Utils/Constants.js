@@ -1,13 +1,13 @@
 import splashAnimation from "../Assets/Lottie/SplashAnimation.json"; // Rename to your file name for custom animation
 
-
-const splashScreenConst = {
+ 
+const SplashScreenConst = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
 
-const illustrationConst = {
+const IllustrationConst = {
   animated: true // Set to false to use static SVG
 };
 
@@ -21,7 +21,7 @@ const GreetingConst = {
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
-const skillsSectionConst = {
+const SkillsSectionConst = {
   title: "Skills",
   subTitle: "Eager Software Development Learner",
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -79,9 +79,43 @@ https://fontawesome.com/icons?d=gallery */
   ],
   display: true // Set false to hide this section, defaults to true
 };
+const ExperiencesConst = {
+  display: true, //Set it to true to show workExperiences Section
+  experience: [
+    {
+      role: "Intern - Techno Functional Full Stack QA&E",
+      company: "Lentra.AI",
+      companylogo: require("./../Assets/Images/LentraLogo.png"),
+      date: "July/2023 - May/2024",
+      desc: "Tech – MongoDB, Debezium, Kafka, Airflow, Postgres, Spark, Livy, HDFS, S3, AWS Glue",
+      descBullets: [
+        "Examined the data pipeline responsible for handling data for 50,000 individuals in batches.",
+        "Received recognition in the form of the \"High Five Award\" for exceptional testing skills during the OND quarter."
+      ]
+    }
+  ]
+};
+
+const EducationInfoConst={
+  display: true, 
+  schools: [
+    {
+      schoolName: "Vellore Institute of Technology",
+      logo: require("../Assets/Images/VITLogo.png"),
+      subHeader: "Master of Techology in Computer Science and Engineering - Integrated (5 Years)",
+      duration: "July 2019 - July 2024",
+      desc: "",
+      descBullets: [""
+      ]
+    }
+  ]
+};
+
 export{
-    splashScreenConst,
-    illustrationConst,
+    SplashScreenConst,
+    IllustrationConst,
     GreetingConst,
-    skillsSectionConst
+    SkillsSectionConst,
+    ExperiencesConst,
+    EducationInfoConst
 }

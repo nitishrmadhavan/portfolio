@@ -1,15 +1,13 @@
-import React, {useContext} from "react";
+import React from "react";
 import "./SplashScreen.css";
 import DisplayLottie from "../../Components/DisplayLottie/DisplayLottie";
-import {GreetingConst, splashScreenConst} from "../../Utils/Constants";
-import StyleContext from "../../Utils/StyleContext";
+import {GreetingConst, SplashScreenConst} from "../../Utils/Constants";
 
 export default function SplashScreen() {
-  const {isDark} = useContext(StyleContext);
   return (
-    <div className={isDark ? "dark-mode splash-container" : "splash-container"}>
+    <div className="splash-container">
       <div className="splash-animation-container">
-        <DisplayLottie animationData={splashScreenConst.animation} />
+        <DisplayLottie animationData={SplashScreenConst.animation} />
       </div>
       <div className="splash-title-container">
         <span className="grey-color"> &lt;</span>

@@ -1,11 +1,11 @@
 import React from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../Components/TechStack/TechStack";
-import { skillsSectionConst } from "../../Utils/Constants";
+import { SkillsSectionConst } from "../../Utils/Constants";
 import { Fade } from "react-reveal";
 
 export default function Skills() {
-  if (!skillsSectionConst.display) {
+  if (!SkillsSectionConst.display) {
     return null;
   }
   return (
@@ -13,12 +13,12 @@ export default function Skills() {
       <div className="skills-main-div">
         <Fade right duration={1000}>
           <div className="skills-text-div">
-            <h1 className="skills-heading">{skillsSectionConst.title}</h1>
-            <p className="subTitle skills-text-subtitle">{skillsSectionConst.subTitle}</p>
+            <h1 className="skills-heading">{SkillsSectionConst.title}</h1>
+            <p className="subTitle skills-text-subtitle">{SkillsSectionConst.subTitle}</p>
             <SoftwareSkill />
             <div>
-              {Array.isArray(skillsSectionConst.skills) &&
-                skillsSectionConst.skills.map((skills, i) => {
+              {Array.isArray(SkillsSectionConst.skills) &&
+                SkillsSectionConst.skills.map((skills, i) => {
                   return (
                     <p key={i} className="subTitle skills-text">
                       {skills}
