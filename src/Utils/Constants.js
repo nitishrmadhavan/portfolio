@@ -111,11 +111,24 @@ const EducationInfoConst={
   ]
 };
 
+const ProjectsConst = {
+  showGithubProfile: "true",
+  display: true 
+};
+
+const SocialMediaLinksConst = {
+  github: "https://github.com/nitishrmadhavan",
+  linkedin: "https://www.linkedin.com/nitishrmadhavan/",
+  gmail: "nitishrmadhavan@gmail.com",
+  display: true // Set true to display this section, defaults to false
+};
 export{
     SplashScreenConst,
     IllustrationConst,
     GreetingConst,
     SkillsSectionConst,
     ExperiencesConst,
-    EducationInfoConst
+    EducationInfoConst,
+    ProjectsConst,
+    SocialMediaLinksConst
 }
